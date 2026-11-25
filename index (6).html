@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>¿Cuánto conoces a David (Neo)?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="tarjeta">
+
+    <!-- PANTALLA DE INICIO -->
+    <section id="inicio" class="pantalla activa">
+      <p class="saludo">bienvenid@, con cuidado te despeinas</p>
+      <h1>¿Cuánto conoces a David&nbsp;(Neo)?</h1>
+      <p class="descripcion">10 preguntas. Elige la opción que crees correcta y mira cuánto me conoces de verdad.</p>
+      <button id="btn-empezar" class="btn principal" type="button">Empezar el quiz</button>
+    </section>
+
+    <!-- PANTALLA DE PREGUNTAS -->
+    <section id="quiz" class="pantalla" aria-live="polite">
+      <div class="progreso" aria-hidden="true">
+        <div id="barra" class="barra"></div>
+      </div>
+      <p id="contador" class="contador"></p>
+      <h2 id="pregunta" class="pregunta"></h2>
+      <div id="opciones" class="opciones"></div>
+      <p id="feedback" class="feedback" role="status"></p>
+      <button id="btn-siguiente" class="btn principal oculto" type="button">Siguiente</button>
+    </section>
+
+    <!-- PANTALLA DE RESULTADOS -->
+    <section id="resultados" class="pantalla">
+      <p class="saludo">Resultados</p>
+      <p class="puntaje"><span id="puntos">0</span><span class="de">/ 10</span></p>
+      <p id="mensaje" class="mensaje"></p>
+      <button id="btn-reiniciar" class="btn principal" type="button">Jugar otra vez</button>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
